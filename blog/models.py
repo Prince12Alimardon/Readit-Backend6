@@ -16,6 +16,7 @@ class Tag(models.Model):
     def __str__(self):
         return self.name
 
+
 class Author(models.Model):
     name = models.CharField(max_length=212)
     image = models.ImageField(upload_to='author', blank=True)
@@ -49,4 +50,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.name
-
